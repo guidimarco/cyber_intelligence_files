@@ -16,12 +16,35 @@ Articolo scientifico scritto dagli autori che hanno elaborato il dataset:
 
 https://www.ijcseonline.org/pdf_paper_view.php?paper_id=4011&28-IJCSE-06600.pdf
 
-## Nifi processors
+## NiFi
+Template NiFi:
+- DDoS_Project.xml
 
-CINT_Project_2022.xml:
-Riproduzione di https://www.projectpro.io/recipes/read-csv-files-and-convert-data-into-json-format-using-nifi-controller-services
-Dataset cars.csv
+Caricato nella repo.
 
-CINT_Project_2022_Rev01.xml:
-Lettura, conversione da csv a json e scrttura su disco e su elastisearch
-Dataset final_dataset.csv o final_dataset_100.csv (ridotto per test, prime 100 righe)
+## Mapping elasticSearch
+PUT /ddos_attack_1
+```
+{
+  "mappings": {
+    "properties": {
+      "Timestamp": {
+        "type":   "date",
+        "format": "dd/MM/yyyy hh:mm:ss a || dd/MM/yyyy hh:mm:ss"
+      },
+      "Dst IP location": {
+        "type": "geo_point"
+      },
+      "Src IP location": {
+        "type": "geo_point"
+      }
+    }
+  }
+}
+```
+
+## Kibana
+Dashboard Kibana:
+- DDoS_Attack.ndjson
+
+Caricato nella repo. 

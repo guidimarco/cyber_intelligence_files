@@ -45,6 +45,6 @@ PUT /ddos_attack_1
 
 ## Kibana
 Dashboard Kibana:
-- DDoS Attack
+- DDoS_Attack.ndjson
 
 Caricato nella repo. 

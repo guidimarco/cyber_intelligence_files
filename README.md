@@ -3,6 +3,8 @@
 - University of Pisa
 
 ## Dataset
+Il file caricato nella repo, `final_dataset_100.csv` è un estratto del dataset originale, composto da 100 tuple. Può essere usato come file di test per configurare il processore NiFi. Il dataset completo è indicato di seguito.
+
 Original dataset (final_project.csv):
 
 https://www.kaggle.com/datasets/devendra416/ddos-datasets
